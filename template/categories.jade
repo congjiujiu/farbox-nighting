@@ -1,0 +1,153 @@
+extends base
+block title
+	title= "日志分类" + " - " + site.title
+
+block header
+	include include/header
+block footer
+	include include/footer
+block content
+	.single
+		#categories
+			.page_wrap
+				ul.cat_list.clearfix
+					li.life
+						a.pic(href="/category/")
+							span
+						h2
+							a(href="/category/前端") [ 前端 ]
+						p
+							|Html5 CSS Javascript
+							br
+							|我觉得，这些都是要学的
+							br
+							|然后还有很多乱七八糟的框架
+							br
+							|比如JQuery
+							br
+							|还有Bootstrap, Angular,等等
+					li.translate
+						a.pic(href="/category/翻译")
+							span
+						h2
+							a(href="/category/Mac") [ Mac ]
+						p
+							|关于我的使用Mac
+							br
+							|或者是配置或者什么的
+							br
+							|大概就是这样嘛
+							br
+							|哼哼
+							br
+							|就酱
+					li.geek
+						a.pic(href="/category/极客")
+							span
+						h2
+							a(href="/category/极客") [ 极客 ]
+						p
+							|作为一名业余geek
+							br
+							|捣鼓与尝鲜，是我的兴致所在
+							br
+							|然后便难以自持地想要对某事物评头论足一通
+							br
+							|另外我还有一项固定爱好
+							br
+							|与功夫网斗智斗勇，其乐无穷！
+					li.humor
+						a.pic(href="/category/幽默")
+							span
+						h2
+							a(href="/category/C++") [ C++ ]
+						p
+							|C++算是写算法的时候用得比较多的语言
+							br
+							|写课设也会用
+							br
+							|所以记录记录
+							br
+							|喵
+					li.food
+						a.pic(href="/category/美食")
+							span
+						h2
+							a(href="/category/Java") [ Java ]
+						p
+							|第一门接触的语言
+							br
+							|面向对象挺好的
+							br
+							|看上去很不错
+							br
+							|很多时候会用到
+					li.photo
+						a.pic(href="/category/照片")
+							span
+						h2
+							a(href="/category/工具") [ 工具 ]
+						p
+							|工具总是会用到的
+							br
+							|也是少不了的
+							br
+							|用到时候慢慢学
+							br
+							|感觉会好很多
+					li.media
+						a.pic(href="/category/影音")
+							span
+						h2
+							a(href="/category/算法") [ 算法 ]
+						p
+							|一些在学习算法的时候写下的东西
+							br
+							|ACM学习嘛
+							br
+							|写点东西
+							br
+							|算法还是挺烧脑的
+					li.book
+						a.pic(href="/category/")
+							span
+						h2
+							a(href="/category/闲扯") [ 闲扯 ]
+						p
+							|留个地方让我闲扯
+							br
+							|酱就可以随便扯扯淡了
+							br
+							|对吧对吧
+							br
+							|自己随便写的
+					li.dream
+						a.pic(href="/category/梦境")
+							span
+						h2
+							a(href="/category/杂项") [ 杂项 ]
+						p
+							|某些我都不知道怎么分类的东西
+							br
+							|就可以扔到这里面来
+							br
+							|有搜索也不怕找不到
+							br
+							|目测不错
+				.clear
+				.pager.clearfix
+					a.gotop.icon-arrow_up(href="#")
+
+		.page_wrap
+			#fb_comments_container
+				.ds-thread(data-thread-key="categories", data-title="日志分类", data-url="http://colachan.com/categories")
+				script(type="text/javascript").
+					var duoshuoQuery = {short_name:"greenzorro"};
+					(function() {
+						var ds = document.createElement('script');
+						ds.type = 'text/javascript';ds.async = true;
+						ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+						ds.charset = 'UTF-8';
+						(document.getElementsByTagName('head')[0] 
+						 || document.getElementsByTagName('body')[0]).appendChild(ds);
+					})();
